@@ -5,4 +5,4 @@ setInterval(() => {
   testimonials[testimonialIndex].classList.remove("active");
   testimonialIndex = (testimonialIndex + 1) % testimonials.length;
   testimonials[testimonialIndex].classList.add("active");
-}, 8000);
+}, 14000);
