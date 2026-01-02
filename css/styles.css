@@ -140,6 +140,23 @@ h2 {
   margin-top: 30px;
 }
 
+.gallery-section {
+  margin-top: 60px;
+}
+
+.gallery-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.gallery-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+
 .workout-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -241,5 +258,86 @@ ul {
 
   .hero-profile img {
     max-height: 300px;
+  }
+}
+
+
+/* ================= RESPONSIVE POLISH ================= */
+
+/* Tablets and smaller laptops */
+@media (max-width: 1100px) {
+  .section {
+    padding: 60px 8%;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Phones and small tablets */
+@media (max-width: 700px) {
+  body {
+    font-size: 17px;
+  }
+
+  .section {
+    padding: 50px 6%;
+  }
+
+  /* HERO FIX */
+  .hero {
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .hero-content {
+    gap: 24px;
+    padding: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  /* FILM + WORKOUT GRIDS STACK CLEANLY */
+  .film-grid,
+  .gallery-row,
+  .workout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Gallery section spacing */
+  .gallery-section {
+    margin-top: 40px;
+  }
+
+  .gallery-section h3 {
+    font-size: 1.5rem;
+  }
+
+  /* CTA BUTTONS */
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 420px) {
+  body {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
   }
 }
